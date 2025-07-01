@@ -1,0 +1,185 @@
+/* === Global === */
+body {
+  font-family: ailerons, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #07575b;
+  margin: 0;
+  padding: 0;
+  background-color: #6eb5c0;
+}
+
+header {
+  background-color: #006c84;
+  color: #e2e8e4;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #51939d;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #e2e8e4;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #07575b;
+}
+
+/* === Book List Section === */
+#book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#buku {
+  margin: 5px;
+}
+
+/* === Main Content === */
+main {
+  padding: 20px;
+  text-align: center;
+  font-size: medium;
+  color: #e2e8e4;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+td {
+  padding-right: 5px;
+}
+
+/* === Order Form (used in order.html) === */
+#order {
+  background-color: #006c84;
+  color: #e2e8e4;
+  border: 1px solid #07575b;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: large;
+}
+
+#order h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#order-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#order-form input[type="text"],
+#order-form input[type="date"],
+#order-form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #07575b;
+  border-radius: 5px;
+  font-size: medium;
+  color: #07575b;
+  font-family: brassie;
+}
+
+#order-form button {
+  background-color: #6eb5c0;
+  color: #07575b;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#order-form button:hover {
+  background-color: #51939d;
+}
+
+/* === Thank You Message === */
+#thank-you-message {
+  background-color: #006c84;
+  color: #e2e8e4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: larger;
+  max-width: 600px;
+}
+
+/* === Thank You Page Layout (optional) === */
+section.thank-you {
+  background-color: #ffffff;
+  border: 2px solid #6a5acd;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section.thank-you h2 {
+  color: #6a5acd;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #6a5acd;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #5a4abf;
+}
+
+/* === Footer === */
+footer {
+  background-color: #006c84;
+  color: #e2e8e4;
+  text-align: center;
+  padding: 10px 0;
+  font-family: brassie;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 5px 0;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesanan - Book Haven</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Book Haven</h1>
+      <h2>Daftar Pesanan</h2>
+    </header>
+
+    <main>
+      <section id="orders">
+        <h3>Pesanan Masuk</h3>
+        <pre id="pesanan">Memuat data pesanan...</pre>
+        <p><a href="index.html">Home</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Temukan dunia baru di setiap halaman</p>
+      <p>&copy; Selamat membaca dengan layanan rental buku kami!</p>
+      <p>
+        &copy; Hubungi kami untuk info lebih lanjut dan nikmati koleksi terbaik
+        kami
+      </p>
+    </footer>
+
+    <script>
+      fetch("orders.txt")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Gagal memuat file orders.txt");
+          }
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("pesanan").textContent = data;
+        })
+        .catch((error) => {
+          document.getElementById("pesanan").textContent =
+            "Gagal memuat data pesanan.";
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>
